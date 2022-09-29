@@ -28,5 +28,16 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+
+
+  // add this to remove error in jasmine functions that occures after installing cypress
+  "include": [
+    "src",
+    "node_modules/cypress"
+  ],
+  "exclude": [
+    "node_modules/cypress"
+  ]
+
 }

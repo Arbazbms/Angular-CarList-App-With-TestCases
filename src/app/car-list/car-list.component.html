@@ -1,0 +1,18 @@
+<p>car-list works!</p>
+
+<button type="button" (click)="getAllCars()">Get All cars</button>
+<button type="button" (click)="getTopThreeCars()">Get top Three cars</button>
+<div *ngIf="errorMessage" class="error"> {{errorMessage}} </div>
+
+<table>
+    <tr *ngFor="let car of carArr;">
+        
+        <td>{{car.doors}}</td>
+        <td>{{car.make}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.price}}</td>
+        <td>{{car.year}}</td>
+
+    </tr>
+    
+</table>
